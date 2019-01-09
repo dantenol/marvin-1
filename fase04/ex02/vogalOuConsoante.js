@@ -1,4 +1,5 @@
 function vogalOuConsoante(letra){
+    letra = letra.toLowewrCase();
     if (letra === "a" || letra === "e"|| letra === "i" || letra == "o" || letra === "u") {
         return "Vogal";
     } else {
