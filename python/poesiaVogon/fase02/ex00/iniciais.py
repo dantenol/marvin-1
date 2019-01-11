@@ -1,2 +1,2 @@
 def iniciais(palavra):
-  	return palavra[0]
+  	return palavra[:3]
