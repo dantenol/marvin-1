@@ -1,5 +1,3 @@
-function entreNumeros() {
-    console.log(12);
-    console.log("euuu");
-    console.log(34243);
+function entreNumeros(min, max) {
+    while (max >= min) console.log(min++); 
 }
