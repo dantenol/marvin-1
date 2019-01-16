@@ -1,7 +1,8 @@
 function booleano(arr) {
-    arr.map((e, i) => {
-        if (typeof e === "boolean")
-            arr.splice(i, 1);
+    var n = [];
+    arr.map((e) => {
+        if (typeof e !== "boolean")
+            n.push(e);
     });
-    return arr;
+    return n;
 }
