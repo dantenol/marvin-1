@@ -2,7 +2,7 @@ function precoMedio(...args) {
     let avg = 0;
     let max = 0;
     let maxName;
-    args[0].map((e, i) => {
+    args.map((e, i) => {
         avg += e.preco;
         if (e.preco > max) {
             max = e.preco;
