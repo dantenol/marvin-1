@@ -10,5 +10,5 @@ function precoMedio(...args) {
         }
     });
     console.log('O produto mais caro se chama "' + maxName + '"');
-    return avg / args[0].length;
+    return avg / args.length;
 }
