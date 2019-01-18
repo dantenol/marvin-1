@@ -1,9 +1,12 @@
 function por42(min, max) {
+    var multps =[];
     while (min <= max) {
-        if (min % 84 === 0)
-            return min;
+        if (min % 42 === 0)
+            multps.push(min);
         min++;
     }
-    console.log("Não encontrado");
+    if (multps[1])
+        return multps[1];
+    console.log("NÃ£o encontrado");
     return false;
 }
