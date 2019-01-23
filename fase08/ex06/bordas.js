@@ -17,7 +17,7 @@ function bordas(h, v) {
         else if (y === v - 1)
             txt += printar(h, "C", "B", "A");
         else
-            txt += printar(h, "B", "\u00A0", "B");
+            txt += printar(h, "B", "0", "B");
         y++;
     }
     console.log(txt.slice(0, -1));
