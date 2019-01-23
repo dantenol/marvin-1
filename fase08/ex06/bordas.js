@@ -1,37 +1,11 @@
-function printarInicio(s) {
-    let st = "A";
+function printar(s, c, m, f) {
+    let st = c;
     let i = 2;
-    if (s === 1)
-        st += '\n';
     while (i++ < s)
-        st += "B";
+        st += m;
     if (i - 1 === s)
-        st += "C\n";
-    return st;
-}
-
-function printarFinal(s) {
-    let st = "C";
-    let i = 2;
-    if (s === 1)
-        st += '\n';
-    while (i++ < s)
-        st += "B";
-    if (i - 1 === s)
-        st += "A\n";
-    return st;
-}
-
-function printarMeio(s) {
-    let st = "B";
-    let i = 2;
-    if (s === 1)
-        st += '\n';
-    while (i++ < s)
-        st += "\u00A0";
-    if (i - 1 === s)
-        st += "B\n";
-    return st;
+        st += f;
+    return st + '\n';
 }
 
 function bordas(h, v) {
@@ -39,12 +13,12 @@ function bordas(h, v) {
     let y = 0;
     while (y < v){
         if (y === 0)
-            txt += printarInicio(h);
+            txt += printar(h, "A", "B", "C");
         else if (y === v - 1)
-            txt += printarFinal(h);
+            txt += printar(h, "C", "B", "A");
         else
-            txt += printarMeio(h);
+            txt += printar(h, "B", "\u00A0", "B");
         y++;
     }
-    console.log(txt);
+    console.log(txt.slice(0, -1));
 }
