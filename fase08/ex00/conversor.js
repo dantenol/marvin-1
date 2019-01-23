@@ -10,7 +10,5 @@ function conversor(temp, de, para) {
     else if (de === "kelvin" && para === "fahrenheit")
         return Math.ceil(temp  * 9/5 - 459.67);
      else if (de === "fahrenheit" && para === "kelvin")
-        return Math.ceil((temp - 459.67) * 5/9);    
+        return Math.ceil((temp + 459.67) * 5/9);    
 }
-
-console.log(conversor(90, "fahrenheit", "celsius")); 
