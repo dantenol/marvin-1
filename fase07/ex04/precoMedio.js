@@ -1,14 +1,10 @@
 function precoMedio(...args) {
-    let avg = 0;
-    let max = 0;
-    let maxName;
-    args.map((e, i) => {
-        avg += e.preco;
-        if (e.preco > max) {
-            max = e.preco;
-            maxName = e.nome;
-        }
-    });
-    console.log('O produto mais caro se chama "' + maxName + '"');
-    return avg / args.length;
+    const txt = JSON.stringify(args);
+    let vals = txt.match(/\"preco\":([\d|.]+)/g);
+    vals = vals.join();
+    vals = vals.match(/[\d|.]+/g);
+    const avg = vals.reduce((a, b) => Number(a) + Number(b), 0) / args.length;
+    const max = args.sort((a, b) => a.preco > b.preco ? -1 : 1);
+    console.log(`O produto mais caro se chama"${max[0].nome}"`);
+    return avg;
 }
