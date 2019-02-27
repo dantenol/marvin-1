@@ -1,2 +1,0 @@
-def mostrarNome():
-    print("Marvin")
