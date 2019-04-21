@@ -1,4 +1,4 @@
 function pares(num1, num2){
-    if (num1 % 2 === 0 && num2 % 2 === 0) return "Os números são pares";
-    else return "Os números não são pares";
+    if (num1 % 2 === 0 && num2 % 2 === 0) return "Os nÃºmeros sao pares";
+    else return "Os nÃºmeros nÃ£o sao pares";
 }
