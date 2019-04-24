@@ -1,3 +1,5 @@
 function dsa() {
     return;
 }
+
+dsa()
