@@ -1,17 +1,11 @@
-function alfabetoMilitar(char) {
-    char = char.toLowerCase();
-    switch (char) {
-        case ("a"):
-            return "alpha";
-        case ("e"):
-            return "echo";
-        case ("i"):
-            return "india";
-        case ("o"):
-            return "oscar";
-        case ("u"):
-            return "uniform";
-        default:
-            return false;
-    }
-}
+def alfabetoMilitar(vogal):
+	vogal = vogal.lower();
+	if vogal not in ('a', 'e', 'i', 'o', 'u'):
+		return False;
+	return {
+		'a': "alpha",
+		'e': "echo",
+		'i': "india",
+		'o': "oscar",
+		'u': "uniform"
+	}[vogal];
