@@ -1,5 +1,5 @@
 def parOuImpar(num):
 	if num % 2 == 0:
-		return "Par";
+		return "Par"
 	else:
-		return "Ímpar";
+		return "Ímpar"
