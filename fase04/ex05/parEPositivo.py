@@ -1,2 +1,5 @@
-def parEPositivo(num):
-	return num >= 0 and num // 2 * 2 == num
+def parEPositivo(n):
+    if n >= 0 and n % 2 == 0:
+        return 'Sim'
+    else:
+        return 'Não'
