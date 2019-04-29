@@ -1,2 +1,3 @@
 def segundo(arr):
-    return [arr[0], "Marvin", arr[1:]]
+    arr.insert(1, "Marvin")
+    return arr
