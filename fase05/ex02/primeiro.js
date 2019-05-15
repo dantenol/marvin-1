@@ -1,3 +1,3 @@
-function primeiro(arr) {
-    return arr[0];
+function fibonacci(n) {
+    teste
 }
