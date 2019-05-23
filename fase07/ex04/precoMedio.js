@@ -5,6 +5,6 @@ function precoMedio(...args) {
     vals = vals.match(/[\d|.]+/g);
     const avg = vals.reduce((a, b) => Number(a) + Number(b), 0) / args.length;
     const max = args.sort((a, b) => a.preco > b.preco ? -1 : 1);
-    console.log(`O produto mais caro se chama"${max[0].nome}"`);
+    console.log(`O produto mais caro se chama "${max[0].nome}"`);
     return avg;
 }
